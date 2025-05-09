@@ -1,0 +1,162 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 30px;
+    background-color: #f5f6fa;
+  }
+  
+  h1 {
+    color: #2f3640;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .btn {
+    background-color: #737bef;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 5px;
+  }
+  
+  .btn-add {
+    background-color: #55efc4;
+    color: #2d3436;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .btn-danger {
+    background-color: #d63031;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+  
+  .edit-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f2e6fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    color: #4d2c6d;
+  }
+  
+  .edit-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #e3d2ec;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6d05aa;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #f3e7f9;
+    box-shadow: 0 0 4px rgb(115, 123, 239);
+  }
+  
+  .form-actions {
+    text-align: center;
+  }
+  
+  .btn-submit {
+    background-color: #a7c4ed;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #ffffff;
+  }
+  
+  .new-task-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f2e6fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    color: #4d2c6d;
+  }
+  
+  .new-task-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #8248a0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5bce4;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #b278d1;
+    box-shadow: 0 0 4px #d8b5f0;
+  }
+  
+  .form-actions {
+    text-align: center;
+  }
+  
+  .btn-submit {
+    background-color: #cfa0e9;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #b278d1;
+  }
+  
+  

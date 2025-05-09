@@ -1,0 +1,61 @@
+<style>
+  .centered-container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .centered-container h2 {
+    color: #2f3640;
+    margin-bottom: 20px;
+  }
+
+  .centered-container p {
+    font-size: 16px;
+    color:#2f3640;
+  }
+
+  .centered-container a {
+    color: #6a1b9a;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .centered-container form {
+    margin-top: 15px;
+  }
+
+  .centered-container input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid #6a1b9a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #6a1b9a;
+    cursor: pointer;
+  }
+
+  .centered-container input[type="submit"]:hover {
+    background-color: #e1ccec;
+  }
+</style>
+
+<div class="centered-container">
+  <h2>Detalhes da Tarefa📜</h2>
+  <h2><%= @task.title %></h2>
+
+
+  <p><strong>Tarefa Concluida?</strong> <%= @task.done ? 'Sim! 🙌' : 'Não 😭' %></p>
+
+  <div>
+    <%= link_to "Editar tarefa", edit_task_path(@task),style: "background-color: #737bef; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" %> |
+    <%= link_to "Voltar para Home", tasks_path,style: "background-color: #737bef; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" %>
+
+    <%= button_to "Excluir Tarefa", @task, method: :delete, style: "background-color:#db1010; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" %>
+  </div>
+</div>
+

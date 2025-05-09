@@ -1,0 +1,29 @@
+<h1 style="text-align:center; color:#2f3640;">✏️ Editar Tarefa</h1>
+
+<div style="max-width: 600px; margin: 30px auto; padding: 20px; background-color: ##74b9ff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <%= form_with(model: @task, local: true) do |form| %>
+    <div style="margin-bottom: 15px;">
+      <%= form.label :title, "Título", style: "display:block; font-weight:bold;" %>
+      <%= form.text_field :title, style: "width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" %>
+    </div>
+
+  
+
+    <div style="margin-bottom: 15px;text-align:center;">
+    <%= form.label :done, "Marcar Tarefa como concluída!", style: "font-weight: bold;" %>
+    <%= form.check_box :done, {}, "1", "0" %>
+  </div>
+  
+ 
+  
+
+    <div style="text-align:center;">
+      <%= form.submit "Salvar alterações", style: "background-color: #737bef; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" %>
+    </div>
+  <% end %>
+
+  <div style="text-align:center; margin-top: 10px;">
+    <%= link_to '← Voltar', tasks_path, style: "color:#4B0082; text-decoration:underline;" %>
+  </div>
+</div>
+
